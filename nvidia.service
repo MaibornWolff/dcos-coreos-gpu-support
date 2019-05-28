@@ -1,0 +1,9 @@
+[Unit]
+Description=NVIDIA driver
+Before=dcos-mesos-slave.service
+
+[Service]
+ExecStart=/opt/nvidia/startup.sh
+
+[Install]
+WantedBy=multi-user.target
